@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maison Aurelia — Fine Timepieces · UAE</title>
+<meta name="description" content="Maison Aurelia — luxury watches with insured express delivery across the UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="announce" data-i18n="announce"></div>
+
+<header class="header" id="header">
+  <div class="wrap header-in">
+    <div class="hd-left">
+      <nav class="nav" aria-label="Primary">
+        <a href="#collection" data-i18n="nav.collection"></a>
+        <a href="#maison" data-i18n="nav.maison"></a>
+        <a href="#concierge" data-i18n="nav.concierge"></a>
+      </nav>
+    </div>
+    <a href="#top" class="logo" aria-label="Maison Aurelia">MAISON AURELIA<small data-i18n="logo.sub"></small></a>
+    <div class="hd-right tools">
+      <select class="pill-select" id="currencySel" aria-label="Currency">
+        <option value="AED">AED</option><option value="USD">USD</option><option value="SAR">SAR</option>
+      </select>
+      <button class="lang-btn" id="langBtn" aria-label="Language"></button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn" id="wishBtn" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.2-9.3C1.7 8 3.4 5 6.6 5c2 0 3.5 1.2 5.4 3.2C13.9 6.2 15.4 5 17.4 5c3.2 0 4.9 3 3.8 6.2-1.7 4.7-9.2 9.3-9.2 9.3z"/></svg>
+        <span class="badge" id="wishCount">0</span>
+      </button>
+      <button class="icon-btn" id="bagBtn" aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="badge" id="bagCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow" data-i18n="hero.eyebrow"></span>
+        <h1 data-i18n-html="hero.title"></h1>
+        <p data-i18n="hero.sub"></p>
+        <div class="hero-cta">
+          <a href="#collection" class="btn btn-gold" data-i18n="hero.cta1"></a>
+          <a href="#" class="btn btn-ghost" id="viewingBtn" target="_blank" rel="noopener" data-i18n="hero.cta2"></a>
+        </div>
+        <div class="hero-meta">
+          <div><b>12</b><span data-i18n="hero.m1"></span></div>
+          <div><b>7</b><span data-i18n="hero.m2"></span></div>
+          <div><b>5 yr</b><span data-i18n="hero.m3"></span></div>
+        </div>
+      </div>
+      <div class="hero-watch" id="heroWatch">
+        <div class="shimmer"></div>
+        <div class="hero-tag"><small data-i18n="hero.tag"></small><strong id="heroName"></strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-label="Guarantees">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><svg viewBox="0 0 32 32"><path d="M16 3l11 4v8c0 7-4.6 12-11 14C9.600 27 5 22 5 15V7l11-4z"/><path d="M11 16l3.500 3.500L21 12.500"/></svg><div><b data-i18n="trust.1t"></b><span data-i18n="trust.1d"></span></div></div>
+      <div class="trust-item"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></svg><div><b data-i18n="trust.2t"></b><span data-i18n="trust.2d"></span></div></div>
+      <div class="trust-item"><svg viewBox="0 0 32 32"><path d="M4 11l12-6 12 6v12l-12 6-12-6V11z"/><path d="M4 11l12 6 12-6M16 17v12"/></svg><div><b data-i18n="trust.3t"></b><span data-i18n="trust.3d"></span></div></div>
+      <div class="trust-item"><svg viewBox="0 0 32 32"><path d="M5 25l2-6a10 10 0 1 1 4 4l-6 2z"/></svg><div><b data-i18n="trust.4t"></b><span data-i18n="trust.4d"></span></div></div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="section" id="collection">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-i18n="col.eyebrow"></span>
+        <h2 data-i18n="col.title"></h2>
+        <p data-i18n="col.sub"></p>
+      </div>
+      <div class="cat-tabs" id="catTabs" role="tablist"></div>
+      <div class="filter-row">
+        <div class="field"><label for="fMov" data-i18n="f.movement"></label><select id="fMov"></select></div>
+        <div class="field"><label for="fMat" data-i18n="f.material"></label><select id="fMat"></select></div>
+        <div class="field"><label for="fCond" data-i18n="f.condition"></label><select id="fCond"></select></div>
+        <div class="field"><span class="lbl" data-i18n="f.price"></span>
+          <div class="range-wrap"><input type="range" id="fPrice" aria-label="Maximum price"><output id="fPriceOut"></output></div></div>
+      </div>
+      <div class="filter-row2">
+        <div class="field"><label for="fSearch" data-i18n="f.search"></label><input type="search" id="fSearch" data-i18n-ph="f.searchph" autocomplete="off"></div>
+        <div class="field"><label for="fSort" data-i18n="f.sort"></label><select id="fSort"></select></div>
+        <button class="link-btn" id="resetBtn" data-i18n="f.reset"></button>
+      </div>
+      <div class="res-meta"><span id="resCount"></span></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- MAISON -->
+  <section class="maison" id="maison">
+    <div class="wrap maison-grid">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="mai.eyebrow"></span>
+        <h2 data-i18n="mai.title"></h2>
+        <p data-i18n="mai.p1"></p>
+        <p data-i18n="mai.p2"></p>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><b>1987</b><span data-i18n="mai.s1"></span></div>
+        <div class="stat"><b>100%</b><span data-i18n="mai.s2"></span></div>
+        <div class="stat"><b>7</b><span data-i18n="mai.s3"></span></div>
+        <div class="stat"><b>24/7</b><span data-i18n="mai.s4"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCIERGE -->
+  <section id="concierge">
+    <div class="wrap">
+      <div class="concierge reveal">
+        <span class="eyebrow" data-i18n="conc.eyebrow"></span>
+        <h2 data-i18n="conc.title"></h2>
+        <p data-i18n="conc.p"></p>
+        <a class="btn btn-gold" id="conciergeBtn" href="#" target="_blank" rel="noopener" data-i18n="conc.cta"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="logo">MAISON AURELIA</div>
+    <div data-i18n="foot.tag"></div>
+    <div data-i18n="foot.rights"></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<!-- Bag drawer -->
+<aside class="drawer" id="bagDrawer" aria-label="Shopping bag" aria-hidden="true">
+  <div class="panel-head"><h3 data-i18n="bag.title"></h3><button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="panel-body" id="bagBody"></div>
+  <div class="panel-foot" id="bagFoot"></div>
+</aside>
+
+<!-- Wishlist drawer -->
+<aside class="drawer" id="wishDrawer" aria-label="Wishlist" aria-hidden="true">
+  <div class="panel-head"><h3 data-i18n="wish.title"></h3><button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="panel-body" id="wishBody"></div>
+</aside>
+
+<!-- Product modal -->
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-box"><button class="x" data-close aria-label="Close">&times;</button><div id="productBody"></div></div>
+</div>
+
+<!-- Checkout modal -->
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-box"><button class="x" data-close aria-label="Close">&times;</button><div id="checkoutBody"></div></div>
+</div>
+
+<!-- Receipt modal -->
+<div class="modal" id="receiptModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-box"><button class="x" data-close aria-label="Close">&times;</button><div id="receiptBody"></div></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

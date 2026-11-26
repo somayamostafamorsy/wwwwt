@@ -11,124 +11,123 @@
   /* ------------------------------ i18n ------------------------------ */
   var I18N = {
     en: {
-      'announce': 'Complimentary insured express delivery across all 7 Emirates  ·  Certified authentic  ·  5-year international warranty',
-      'logo.sub': 'FINE TIMEPIECES · UAE',
-      'nav.collection': 'Collection', 'nav.maison': 'The Maison', 'nav.concierge': 'Concierge',
+      'announce': "Complimentary insured express delivery worldwide  ·  Cash on delivery  ·  2-year warranty",
+      'logo.sub': "FINE TIMEPIECES · WORLDWIDE",
+      'nav.collection': 'Collection', 'nav.maison': 'The Maison', 'nav.concierge': "Customer Service",
       'hero.eyebrow': 'The Flagship Reference',
       'hero.title': 'Time, <em>perfected</em> in gold.',
-      'hero.sub': 'Swiss-made horology, authenticated by master watchmakers and delivered by insured VIP courier to your door anywhere in the Emirates.',
-      'hero.cta1': 'Explore Collection', 'hero.cta2': 'Book Private Viewing',
-      'hero.m1': 'Timepieces', 'hero.m2': 'Emirates', 'hero.m3': 'Warranty', 'hero.tag': 'Featured',
+      'hero.sub': "Authentic luxury timepieces, inspected by master watchmakers and delivered by insured express courier to your door anywhere in the world.",
+      'hero.cta1': 'Explore Collection', 'hero.cta2': "Order on WhatsApp",
+      'hero.m1': 'Timepieces', 'hero.m2v': 'Global', 'hero.m2': "Shipping", 'hero.m3': "Warranty", 'hero.tag': 'Featured',
       'trust.1t': 'Certified Authentic', 'trust.1d': 'Every watch verified by our master watchmakers.',
-      'trust.2t': '5-Year International Warranty', 'trust.2d': 'Honoured at service centres worldwide.',
+      'trust.2t': "2-Year Warranty", 'trust.2d': "Full cover against manufacturing defects.",
       'trust.3t': 'Full Box & Papers', 'trust.3d': 'Presented in original or collector packaging.',
-      'trust.4t': 'Private Concierge', 'trust.4d': 'Personal advice on WhatsApp, seven days a week.',
+      'trust.4t': "Customer Service", 'trust.4d': 'Personal advice on WhatsApp, seven days a week.',
       'col.eyebrow': 'The Collection', 'col.title': 'Timepieces of Distinction',
-      'col.sub': 'From heritage dress watches to haute horlogerie — refine by movement, material, condition and price.',
+      'col.sub': "From iconic Rolex references to Patek Philippe, Audemars Piguet, Omega and more — refine by model, movement and price.",
       'f.movement': 'Movement', 'f.material': 'Case Material', 'f.condition': 'Condition', 'f.price': 'Max Price',
       'f.search': 'Search', 'f.searchph': 'Name, reference or collection…', 'f.sort': 'Sort By', 'f.reset': 'Reset filters', 'f.all': 'All',
       'sort.featured': 'Featured', 'sort.low': 'Price: Low to High', 'sort.high': 'Price: High to Low',
       'res.count': '{n} timepieces', 'res.one': '1 timepiece', 'res.none': 'No timepieces match your selection. Try widening your filters.',
-      'cat.all': 'All', 'cat.classic': 'Classic & Dress', 'cat.dive': 'Dive & Sport', 'cat.chrono': 'Chronographs', 'cat.women': "Women's Collection", 'cat.smart': 'Smart Luxury',
+      'cat.all': "All", 'cat.women': "Rolex for Women", 'cat.yachtmaster': "Rolex Yacht-Master", 'cat.patek': "Patek Philippe", 'cat.omega': "Omega", 'cat.breitling': "Breitling", 'cat.ap': "Audemars Piguet", 'cat.cartier': "Cartier Watches", 'cat.datejust': "Rolex Datejust", 'cat.oysterperp': "Rolex Oyster Perpetual", 'cat.daytona': "Rolex Daytona", 'cat.daydate': "Rolex Day-Date", 'cat.submariner': "Rolex Submariner", 'cat.skydweller': "Rolex Sky-Dweller", 'cat.gmt': "Rolex GMT",
       'mov.Automatic': 'Automatic', 'mov.Quartz': 'Quartz', 'mov.Manual Wind': 'Manual Wind', 'mov.Hybrid': 'Hybrid',
       'mat.904L Steel': '904L Steel', 'mat.18k Yellow Gold': '18k Yellow Gold', 'mat.Rose Gold': 'Rose Gold', 'mat.Titanium': 'Titanium', 'mat.Ceramic': 'Ceramic',
       'cond.new': 'Brand New', 'cond.preowned': 'Certified Pre-Owned',
       'tag.Bestseller': 'Bestseller', 'tag.Flagship': 'Flagship', 'tag.Haute Horlogerie': 'Haute Horlogerie', 'tag.Professional Diver': 'Professional Diver', 'tag.New': 'New',
       'tag.Racing Icon': 'Racing Icon', 'tag.Certified Pre-Owned': 'Certified Pre-Owned', 'tag.Diamond Bezel': 'Diamond Bezel', 'tag.Smart Luxury': 'Smart Luxury',
-      'btn.add': 'Add to Bag', 'btn.wish': 'Save to Wishlist', 'btn.saved': 'Saved to Wishlist', 'btn.inquire': 'Inquire via UAE Concierge', 'btn.quick': 'Quick View', 'btn.tobag': 'Move to Bag',
+      'btn.add': 'Add to Bag', 'btn.wish': 'Save to Wishlist', 'btn.saved': 'Saved to Wishlist', 'btn.inquire': "Inquire on WhatsApp", 'btn.quick': 'Quick View', 'btn.tobag': 'Move to Bag',
       'spec.ref': 'Reference #', 'spec.caliber': 'Caliber', 'spec.diameter': 'Case Diameter', 'spec.water': 'Water Resistance', 'spec.reserve': 'Power Reserve',
       'spec.bracelet': 'Bracelet', 'spec.cond': 'Condition', 'spec.box': 'Box & Papers', 'spec.mov': 'Movement', 'spec.mat': 'Case Material',
       'view.dial': 'Dial', 'view.side': 'Profile', 'view.back': 'Caseback',
       'bag.title': 'Your Bag', 'wish.title': 'Wishlist', 'bag.empty': 'Your bag is empty.', 'wish.empty': 'Your wishlist is empty. Tap the heart on any timepiece to save it.',
-      'bag.sub': 'Subtotal', 'bag.vat': 'UAE VAT (5%)', 'bag.ship': 'Insured Express Shipping', 'bag.free': 'Complimentary', 'bag.disc': 'Promo discount',
+      'bag.sub': 'Subtotal', 'bag.vat': "VAT (5%)", 'bag.ship': 'Insured Express Shipping', 'bag.free': 'Complimentary', 'bag.disc': 'Promo discount',
       'bag.total': 'Total (incl. VAT)', 'bag.checkout': 'Secure Checkout', 'bag.remove': 'Remove', 'bag.browse': 'Browse the collection',
       'promo.ph': 'Promo code', 'promo.apply': 'Apply', 'promo.ok': 'Code {c} applied — {p}% off', 'promo.bad': 'This promo code is not valid.', 'promo.remove': 'Remove code',
       'inst': 'or 4 interest-free payments of {a} with Tabby / Tamara',
-      'co.title': 'Secure Checkout', 'co.sub': 'Insured express delivery across the UAE', 'co.delivery': 'Delivery Details', 'co.name': 'Full Name', 'co.mobile': 'UAE Mobile', 'co.emirate': 'Emirate',
-      'co.area': 'Area / Community', 'co.building': 'Building / Villa #', 'co.payment': 'Payment Method', 'co.select': 'Select emirate…',
-      'pay.card': 'Credit / Debit Card', 'pay.card.d': 'Visa, Mastercard, Amex', 'pay.apple': 'Apple Pay', 'pay.apple.d': 'Pay with Face ID', 'pay.cod': 'Cash on Delivery', 'pay.cod.d': 'Orders up to {a}',
+      'co.title': 'Secure Checkout', 'co.sub': "Insured express delivery worldwide", 'co.delivery': 'Delivery Details', 'co.name': 'Full Name', 'co.mobile': "Mobile (with country code)", 'co.emirate': "Country",
+      'co.area': "City", 'co.building': "Street Address / Building", 'co.payment': 'Payment Method', 'co.select': "Select country…",
+      'pay.card': 'Credit / Debit Card', 'pay.card.d': 'Visa, Mastercard, Amex', 'pay.apple': 'Apple Pay', 'pay.apple.d': 'Pay with Face ID', 'pay.cod': 'Cash on Delivery', 'pay.cod.d': "Pay when you receive your watch",
       'pay.cod.na': 'Not available above {a}', 'pay.tabby': '4 Interest-free Installments', 'pay.tabby.d': '{a} × 4, Tabby / Tamara',
       'card.number': 'Card Number', 'card.exp': 'Expiry (MM/YY)', 'card.cvv': 'CVV',
       'co.place': 'Place Order', 'co.summary': 'Order Summary', 'co.demo': 'Demonstration checkout — no payment is processed and no card data is stored.',
-      'err.name': 'Please enter your full name.', 'err.mobile': 'Enter a valid UAE mobile, e.g. +971 50 123 4567.', 'err.emirate': 'Please select an Emirate.',
-      'err.area': 'Please enter your area or community.', 'err.building': 'Please enter building or villa number.', 'err.card': 'Please check your card details.',
-      'deliv.dubai': 'Same-Day VIP Courier — order before 4 PM for delivery today by 9 PM.', 'deliv.other': 'Next-Day Insured Delivery — arrives {d}, signature required.',
-      'rc.title': 'Order Confirmed', 'rc.thanks': 'Thank you, {n}. Our concierge is preparing your order.', 'rc.order': 'Order No.', 'rc.date': 'Date', 'rc.deliver': 'Delivery',
+      'err.name': 'Please enter your full name.', 'err.mobile': "Enter a valid mobile with country code, e.g. +971 50 123 4567.", 'err.emirate': "Please select a country.",
+      'err.area': "Please enter your city.", 'err.building': "Please enter your street address.", 'err.card': 'Please check your card details.',
+      'deliv.dubai': "Insured express delivery within 1–2 business days.", 'deliv.other': "Insured international express delivery in 3–7 business days, with tracking and signature on delivery.",
+      'rc.title': 'Order Confirmed', 'rc.thanks': "Thank you, {n}. Our team is preparing your order.", 'rc.order': 'Order No.', 'rc.date': 'Date', 'rc.deliver': 'Delivery',
       'rc.pay': 'Payment', 'rc.address': 'Deliver To', 'rc.copy': 'Copy Receipt', 'rc.copied': 'Receipt copied to clipboard', 'rc.copyfail': 'Select and copy the receipt manually', 'rc.continue': 'Continue Shopping',
       'rc.paid.card': 'Card ending {l}', 'rc.paid.apple': 'Apple Pay', 'rc.paid.cod': 'Cash on Delivery', 'rc.paid.tabby': '4 installments of {a}',
       'mai.eyebrow': 'The Maison', 'mai.title': 'Heritage, measured in seconds.',
-      'mai.p1': 'Since 1987, Maison Aurelia has curated the finest Swiss and independent timepieces for collectors across the Gulf.',
-      'mai.p2': 'Every watch is inspected, authenticated and serviced in our own atelier before it reaches you — new or certified pre-owned, always with the full promise of the house.',
-      'mai.s1': 'Established', 'mai.s2': 'Authenticated', 'mai.s3': 'Emirates Served', 'mai.s4': 'Concierge',
-      'conc.eyebrow': 'Private Concierge', 'conc.title': 'Your personal horologist, on WhatsApp.',
-      'conc.p': 'Ask about availability, arrange a private viewing at our Dubai salon, or request a watch not listed here.', 'conc.cta': 'Chat on WhatsApp',
-      'foot.tag': 'Fine timepieces · Dubai · Abu Dhabi', 'foot.rights': '© Maison Aurelia. Demonstration storefront.',
+      'mai.p1': "Since 1987, Maison Aurelia has curated the finest Swiss and independent timepieces for collectors around the world.",
+      'mai.p2': "Every watch is inspected and authenticated before it reaches you, and backed by a 2-year warranty.",
+      'mai.s1': 'Established', 'mai.s2': 'Authenticated', 'mai.s3': "Warranty", 'mai.s4': "Support",
+      'conc.eyebrow': "Customer Service", 'conc.title': "One message away, on WhatsApp.",
+      'conc.p': "Ask about availability, shipping to your country, or request a watch not listed here.", 'conc.cta': 'Chat on WhatsApp',
+      'foot.tag': "Fine timepieces · Worldwide shipping", 'foot.rights': '© Maison Aurelia. Demonstration storefront.',
       'toast.added': 'Added to your bag', 'toast.wish': 'Saved to your wishlist', 'toast.unwish': 'Removed from wishlist',
-      'wa.inquire': 'Hello Maison Aurelia, I would like to inquire about the {name} (Ref. {ref}).', 'wa.viewing': 'Hello Maison Aurelia, I would like to book a private viewing.', 'wa.general': 'Hello Maison Aurelia, I would like some assistance.',
+      'wa.inquire': 'Hello Maison Aurelia, I would like to inquire about the {name} (Ref. {ref}).', 'wa.viewing': "Hello Maison Aurelia, I would like to place an order.", 'wa.general': 'Hello Maison Aurelia, I would like some assistance.',
       'vat.note': 'incl. 5% VAT at checkout', 'lang.btn': 'العربية'
     },
     ar: {
-      'announce': 'شحن سريع مؤمَّن مجاني إلى جميع الإمارات السبع  ·  أصلية ومعتمدة  ·  ضمان دولي 5 سنوات',
-      'logo.sub': 'ساعات فاخرة · الإمارات',
-      'nav.collection': 'المجموعة', 'nav.maison': 'الدار', 'nav.concierge': 'الكونسيرج',
+      'announce': "شحن سريع مؤمَّن مجاني لجميع دول العالم  ·  الدفع عند الاستلام  ·  ضمان سنتين",
+      'logo.sub': "ساعات فاخرة · شحن عالمي",
+      'nav.collection': 'المجموعة', 'nav.maison': 'الدار', 'nav.concierge': "خدمة العملاء",
       'hero.eyebrow': 'الإصدار الرائد',
       'hero.title': 'الوقت، في <em>أبهى</em> صوره الذهبية.',
-      'hero.sub': 'ساعات سويسرية موثّقة من أمهر الساعاتية، تصلك عبر مندوب VIP مؤمَّن إلى باب منزلك في أي مكان بالإمارات.',
-      'hero.cta1': 'استكشف المجموعة', 'hero.cta2': 'احجز معاينة خاصة',
-      'hero.m1': 'ساعة', 'hero.m2': 'إمارات', 'hero.m3': 'ضمان', 'hero.tag': 'مختارة',
+      'hero.sub': "ساعات فاخرة أصلية يفحصها أمهر الساعاتية، وتصلك عبر شحن سريع مؤمَّن إلى باب منزلك في أي مكان بالعالم.",
+      'hero.cta1': 'استكشف المجموعة', 'hero.cta2': "اطلب عبر واتساب",
+      'hero.m1': 'ساعة', 'hero.m2v': 'عالمي', 'hero.m2': "شحن", 'hero.m3': "ضمان", 'hero.tag': 'مختارة',
       'trust.1t': 'أصالة معتمدة', 'trust.1d': 'كل ساعة موثّقة من خبراء الدار.',
-      'trust.2t': 'ضمان دولي 5 سنوات', 'trust.2d': 'معتمد في مراكز الخدمة حول العالم.',
+      'trust.2t': "ضمان سنتين", 'trust.2d': "تغطية كاملة لعيوب الصناعة.",
       'trust.3t': 'علبة وأوراق كاملة', 'trust.3d': 'تُسلَّم بعبوتها الأصلية أو عبوة المقتنين.',
-      'trust.4t': 'كونسيرج خاص', 'trust.4d': 'استشارة شخصية عبر واتساب طوال أيام الأسبوع.',
+      'trust.4t': "خدمة العملاء", 'trust.4d': 'استشارة شخصية عبر واتساب طوال أيام الأسبوع.',
       'col.eyebrow': 'المجموعة', 'col.title': 'ساعات استثنائية',
-      'col.sub': 'من ساعات الأناقة التراثية إلى الساعات الراقية المعقّدة — صفِّ حسب الحركة والمعدن والحالة والسعر.',
+      'col.sub': "من مراجع رولكس الشهيرة إلى باتيك فيليب وأوديمار بيغيه وأوميغا وغيرها — صفِّ حسب الموديل والحركة والسعر.",
       'f.movement': 'الحركة', 'f.material': 'معدن العلبة', 'f.condition': 'الحالة', 'f.price': 'أقصى سعر',
       'f.search': 'بحث', 'f.searchph': 'الاسم أو المرجع أو المجموعة…', 'f.sort': 'ترتيب حسب', 'f.reset': 'إعادة ضبط الفلاتر', 'f.all': 'الكل',
       'sort.featured': 'المميزة', 'sort.low': 'السعر: من الأقل إلى الأعلى', 'sort.high': 'السعر: من الأعلى إلى الأقل',
       'res.count': '{n} ساعة', 'res.one': 'ساعة واحدة', 'res.none': 'لا توجد ساعات مطابقة. جرّب توسيع الفلاتر.',
-      'cat.all': 'الكل', 'cat.classic': 'كلاسيكية وأنيقة', 'cat.dive': 'غوص ورياضة', 'cat.chrono': 'كرونوغراف', 'cat.women': 'مجموعة السيدات', 'cat.smart': 'ذكية فاخرة',
+      'cat.all': "الكل", 'cat.women': "رولكس للسيدات", 'cat.yachtmaster': "Rolex Yacht-Master", 'cat.patek': "Patek Philippe", 'cat.omega': "Omega", 'cat.breitling': "Breitling", 'cat.ap': "Audemars Piguet", 'cat.cartier': "Cartier", 'cat.datejust': "Rolex Datejust", 'cat.oysterperp': "Rolex Oyster Perpetual", 'cat.daytona': "Rolex Daytona", 'cat.daydate': "Rolex Day-Date", 'cat.submariner': "Rolex Submariner", 'cat.skydweller': "Rolex Sky-Dweller", 'cat.gmt': "Rolex GMT",
       'mov.Automatic': 'أوتوماتيك', 'mov.Quartz': 'كوارتز', 'mov.Manual Wind': 'تعبئة يدوية', 'mov.Hybrid': 'هجينة',
       'mat.904L Steel': 'ستانلس ستيل 904L', 'mat.18k Yellow Gold': 'ذهب أصفر 18 قيراط', 'mat.Rose Gold': 'ذهب وردي', 'mat.Titanium': 'تيتانيوم', 'mat.Ceramic': 'سيراميك',
       'cond.new': 'جديدة', 'cond.preowned': 'مستعملة معتمدة',
       'tag.Bestseller': 'الأكثر مبيعاً', 'tag.Flagship': 'الرائدة', 'tag.Haute Horlogerie': 'ساعات راقية', 'tag.Professional Diver': 'غوص احترافي', 'tag.New': 'جديد',
       'tag.Racing Icon': 'أيقونة السباق', 'tag.Certified Pre-Owned': 'مستعملة معتمدة', 'tag.Diamond Bezel': 'إطار ألماس', 'tag.Smart Luxury': 'ذكية فاخرة',
-      'btn.add': 'أضف إلى الحقيبة', 'btn.wish': 'احفظ في المفضلة', 'btn.saved': 'محفوظة في المفضلة', 'btn.inquire': 'استفسر عبر كونسيرج الإمارات', 'btn.quick': 'نظرة سريعة', 'btn.tobag': 'انقل إلى الحقيبة',
+      'btn.add': 'أضف إلى الحقيبة', 'btn.wish': 'احفظ في المفضلة', 'btn.saved': 'محفوظة في المفضلة', 'btn.inquire': "استفسر عبر واتساب", 'btn.quick': 'نظرة سريعة', 'btn.tobag': 'انقل إلى الحقيبة',
       'spec.ref': 'رقم المرجع', 'spec.caliber': 'الكاليبر', 'spec.diameter': 'قطر العلبة', 'spec.water': 'مقاومة الماء', 'spec.reserve': 'احتياطي الطاقة',
       'spec.bracelet': 'السوار', 'spec.cond': 'الحالة', 'spec.box': 'العلبة والأوراق', 'spec.mov': 'الحركة', 'spec.mat': 'معدن العلبة',
       'view.dial': 'الواجهة', 'view.side': 'الجانب', 'view.back': 'الخلفية',
       'bag.title': 'حقيبتك', 'wish.title': 'المفضلة', 'bag.empty': 'حقيبتك فارغة.', 'wish.empty': 'قائمة المفضلة فارغة. اضغط على القلب في أي ساعة لحفظها.',
-      'bag.sub': 'المجموع الفرعي', 'bag.vat': 'ضريبة القيمة المضافة (5%)', 'bag.ship': 'شحن سريع مؤمَّن', 'bag.free': 'مجاني', 'bag.disc': 'خصم الرمز الترويجي',
+      'bag.sub': 'المجموع الفرعي', 'bag.vat': "ضريبة القيمة المضافة (5%)", 'bag.ship': 'شحن سريع مؤمَّن', 'bag.free': 'مجاني', 'bag.disc': 'خصم الرمز الترويجي',
       'bag.total': 'الإجمالي (شامل الضريبة)', 'bag.checkout': 'إتمام الشراء الآمن', 'bag.remove': 'إزالة', 'bag.browse': 'تصفّح المجموعة',
       'promo.ph': 'رمز ترويجي', 'promo.apply': 'تطبيق', 'promo.ok': 'تم تطبيق الرمز {c} — خصم {p}%', 'promo.bad': 'الرمز الترويجي غير صالح.', 'promo.remove': 'إزالة الرمز',
       'inst': 'أو 4 دفعات بدون فوائد بقيمة {a} عبر تابي / تمارا',
-      'co.title': 'إتمام الشراء الآمن', 'co.sub': 'توصيل سريع مؤمَّن في جميع أنحاء الإمارات', 'co.delivery': 'تفاصيل التوصيل', 'co.name': 'الاسم الكامل', 'co.mobile': 'جوال الإمارات', 'co.emirate': 'الإمارة',
-      'co.area': 'المنطقة / الحي', 'co.building': 'رقم المبنى / الفيلا', 'co.payment': 'طريقة الدفع', 'co.select': 'اختر الإمارة…',
-      'pay.card': 'بطاقة ائتمان / خصم', 'pay.card.d': 'فيزا، ماستركارد، أمكس', 'pay.apple': 'Apple Pay', 'pay.apple.d': 'الدفع عبر Face ID', 'pay.cod': 'الدفع عند الاستلام', 'pay.cod.d': 'للطلبات حتى {a}',
+      'co.title': 'إتمام الشراء الآمن', 'co.sub': "توصيل سريع مؤمَّن لجميع دول العالم", 'co.delivery': 'تفاصيل التوصيل', 'co.name': 'الاسم الكامل', 'co.mobile': "الجوال (مع رمز الدولة)", 'co.emirate': "الدولة",
+      'co.area': "المدينة", 'co.building': "العنوان / رقم المبنى", 'co.payment': 'طريقة الدفع', 'co.select': "اختر الدولة…",
+      'pay.card': 'بطاقة ائتمان / خصم', 'pay.card.d': 'فيزا، ماستركارد، أمكس', 'pay.apple': 'Apple Pay', 'pay.apple.d': 'الدفع عبر Face ID', 'pay.cod': 'الدفع عند الاستلام', 'pay.cod.d': "ادفع عند استلام ساعتك",
       'pay.cod.na': 'غير متاح للطلبات فوق {a}', 'pay.tabby': '4 دفعات بدون فوائد', 'pay.tabby.d': '{a} × 4 عبر تابي / تمارا',
       'card.number': 'رقم البطاقة', 'card.exp': 'الانتهاء (شهر/سنة)', 'card.cvv': 'رمز الأمان',
       'co.place': 'تأكيد الطلب', 'co.summary': 'ملخص الطلب', 'co.demo': 'عملية شراء تجريبية — لا يتم أي دفع ولا تُحفظ بيانات البطاقة.',
-      'err.name': 'الرجاء إدخال الاسم الكامل.', 'err.mobile': 'أدخل رقم جوال إماراتي صحيح مثل ‎+971 50 123 4567.', 'err.emirate': 'الرجاء اختيار الإمارة.',
-      'err.area': 'الرجاء إدخال المنطقة أو الحي.', 'err.building': 'الرجاء إدخال رقم المبنى أو الفيلا.', 'err.card': 'الرجاء التحقق من بيانات البطاقة.',
-      'deliv.dubai': 'توصيل VIP في اليوم نفسه — اطلب قبل 4 عصراً لتصلك اليوم قبل 9 مساءً.', 'deliv.other': 'توصيل مؤمَّن في اليوم التالي — يصل {d} مع التوقيع عند الاستلام.',
-      'rc.title': 'تم تأكيد الطلب', 'rc.thanks': 'شكراً {n}. يقوم الكونسيرج بتجهيز طلبك.', 'rc.order': 'رقم الطلب', 'rc.date': 'التاريخ', 'rc.deliver': 'التوصيل',
+      'err.name': 'الرجاء إدخال الاسم الكامل.', 'err.mobile': "أدخل رقم جوال صحيح مع رمز الدولة مثل ‎+971 50 123 4567.", 'err.emirate': "الرجاء اختيار الدولة.",
+      'err.area': "الرجاء إدخال المدينة.", 'err.building': "الرجاء إدخال العنوان.", 'err.card': 'الرجاء التحقق من بيانات البطاقة.',
+      'deliv.dubai': "توصيل سريع مؤمَّن خلال 1–2 يوم عمل.", 'deliv.other': "توصيل دولي سريع مؤمَّن خلال 3–7 أيام عمل، مع رقم تتبع وتوقيع عند الاستلام.",
+      'rc.title': 'تم تأكيد الطلب', 'rc.thanks': "شكراً {n}. يقوم فريقنا بتجهيز طلبك.", 'rc.order': 'رقم الطلب', 'rc.date': 'التاريخ', 'rc.deliver': 'التوصيل',
       'rc.pay': 'الدفع', 'rc.address': 'عنوان التسليم', 'rc.copy': 'نسخ الإيصال', 'rc.copied': 'تم نسخ الإيصال', 'rc.copyfail': 'حدّد الإيصال وانسخه يدوياً', 'rc.continue': 'متابعة التسوق',
       'rc.paid.card': 'بطاقة تنتهي بـ {l}', 'rc.paid.apple': 'Apple Pay', 'rc.paid.cod': 'الدفع عند الاستلام', 'rc.paid.tabby': '4 دفعات بقيمة {a}',
       'mai.eyebrow': 'الدار', 'mai.title': 'تراثٌ يُقاس بالثواني.',
-      'mai.p1': 'منذ 1987 تنتقي «ميزون أوريليا» أرقى الساعات السويسرية والمستقلة لهواة الاقتناء في الخليج.',
-      'mai.p2': 'تُفحص كل ساعة وتُوثَّق وتُصان في ورشتنا قبل أن تصلك — جديدة أو مستعملة معتمدة، دائماً بوعد الدار الكامل.',
-      'mai.s1': 'تأسست', 'mai.s2': 'موثّقة', 'mai.s3': 'إمارات نخدمها', 'mai.s4': 'كونسيرج',
-      'conc.eyebrow': 'كونسيرج خاص', 'conc.title': 'خبير الساعات الشخصي، عبر واتساب.',
-      'conc.p': 'اسأل عن التوفر، أو رتّب معاينة خاصة في صالوننا بدبي، أو اطلب ساعة غير مدرجة هنا.', 'conc.cta': 'تحدّث عبر واتساب',
-      'foot.tag': 'ساعات فاخرة · دبي · أبوظبي', 'foot.rights': '© ميزون أوريليا. متجر تجريبي.',
+      'mai.p1': "منذ 1987 تنتقي «ميزون أوريليا» أرقى الساعات السويسرية والمستقلة لهواة الاقتناء حول العالم.",
+      'mai.p2': "تُفحص كل ساعة وتُوثَّق قبل أن تصلك، وتأتي بضمان سنتين.",
+      'mai.s1': 'تأسست', 'mai.s2': 'موثّقة', 'mai.s3': "ضمان", 'mai.s4': "دعم",
+      'conc.eyebrow': "خدمة العملاء", 'conc.title': "على بُعد رسالة واحدة، عبر واتساب.",
+      'conc.p': "اسأل عن التوفر والشحن إلى بلدك، أو اطلب ساعة غير مدرجة هنا.", 'conc.cta': 'تحدّث عبر واتساب',
+      'foot.tag': "ساعات فاخرة · شحن لكل دول العالم", 'foot.rights': '© ميزون أوريليا. متجر تجريبي.',
       'toast.added': 'أُضيفت إلى حقيبتك', 'toast.wish': 'حُفظت في المفضلة', 'toast.unwish': 'أُزيلت من المفضلة',
-      'wa.inquire': 'مرحباً ميزون أوريليا، أرغب في الاستفسار عن ساعة {name} (المرجع {ref}).', 'wa.viewing': 'مرحباً ميزون أوريليا، أرغب في حجز معاينة خاصة.', 'wa.general': 'مرحباً ميزون أوريليا، أحتاج إلى مساعدة.',
+      'wa.inquire': 'مرحباً ميزون أوريليا، أرغب في الاستفسار عن ساعة {name} (المرجع {ref}).', 'wa.viewing': "مرحباً ميزون أوريليا، أرغب في تقديم طلب.", 'wa.general': 'مرحباً ميزون أوريليا، أحتاج إلى مساعدة.',
       'vat.note': 'شامل 5% ضريبة عند الدفع', 'lang.btn': 'EN'
     }
   };
-  var EMIRATES = {
-    en: { dubai: 'Dubai', abudhabi: 'Abu Dhabi', sharjah: 'Sharjah', ajman: 'Ajman', rak: 'Ras Al Khaimah', fujairah: 'Fujairah', uaq: 'Umm Al Quwain' },
-    ar: { dubai: 'دبي', abudhabi: 'أبوظبي', sharjah: 'الشارقة', ajman: 'عجمان', rak: 'رأس الخيمة', fujairah: 'الفجيرة', uaq: 'أم القيوين' }
-  };
+  var COUNTRIES = [['AE','United Arab Emirates','الإمارات'],['SA','Saudi Arabia','السعودية'],['EG','Egypt','مصر'],['KW','Kuwait','الكويت'],['QA','Qatar','قطر'],['BH','Bahrain','البحرين'],['OM','Oman','عُمان'],['JO','Jordan','الأردن'],['LB','Lebanon','لبنان'],['IQ','Iraq','العراق'],['MA','Morocco','المغرب'],['TN','Tunisia','تونس'],['DZ','Algeria','الجزائر'],['LY','Libya','ليبيا'],['SD','Sudan','السودان'],['TR','Türkiye','تركيا'],['GB','United Kingdom','المملكة المتحدة'],['DE','Germany','ألمانيا'],['FR','France','فرنسا'],['IT','Italy','إيطاليا'],['ES','Spain','إسبانيا'],['CH','Switzerland','سويسرا'],['NL','Netherlands','هولندا'],['US','United States','الولايات المتحدة'],['CA','Canada','كندا'],['AU','Australia','أستراليا'],['IN','India','الهند'],['PK','Pakistan','باكستان'],['MY','Malaysia','ماليزيا'],['SG','Singapore','سنغافورة'],['ZZ','Other country','دولة أخرى']];
+  var EMIRATES = { en: {}, ar: {} };
+  COUNTRIES.forEach(function (c) { EMIRATES.en[c[0]] = c[1]; EMIRATES.ar[c[0]] = c[2]; });
 
   /* ------------------------------ state ----------------------------- */
   var state = { cart: [], wish: [], currency: 'AED', lang: 'en', theme: 'dark', promo: '' };
@@ -148,7 +147,7 @@
   }
 
   var MAXP = Math.ceil(Math.max.apply(null, PRODUCTS.map(function (p) { return p.price; })) / 5000) * 5000;
-  var F = { cat: 'all', mov: 'all', mat: 'all', cond: 'all', max: MAXP, q: '', sort: 'featured' };
+  var F = { cat: 'all', mov: 'all', max: MAXP, q: '', sort: 'featured' };
 
   /* ----------------------------- helpers ---------------------------- */
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -185,7 +184,7 @@
 
   function watchSVG(p, view, opts) {
     opts = opts || {}; view = view || 'dial';
-    var L = p.look, id = opts.idp || 'g', cx = 200, cy = 200, s = '';
+    var L = p.look, id = opts.idp || 'g', cx = 200, cy = 200, s = '', dt = String(opts.dialText || p.brand || '').toUpperCase();
     s += '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">';
     s += '<defs>' +
       '<linearGradient id="' + id + 'c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="' + lighten(L.case, .55) + '"/><stop offset=".5" stop-color="' + L.case + '"/><stop offset="1" stop-color="' + darken(L.case, .4) + '"/></linearGradient>' +
@@ -266,7 +265,7 @@
       s += '<path d="M150 200 A50 50 0 0 1 200 150" fill="none" stroke="' + L.accent + '" stroke-width="2" opacity=".6"/>';
     }
     if (!L.skeleton) {
-      s += '<text x="200" y="146" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="3.2" fill="' + L.accent + '">AURELIA</text>';
+      s += '<text x="200" y="146" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="3.2" fill="' + L.accent + '" textLength="' + Math.min(dt.length * 9.2, 96).toFixed(1) + '" lengthAdjust="spacing">' + esc(dt) + '</text>';
       if (!L.sub && !L.smart) s += '<text x="200" y="' + (L.date ? 240 : 256) + '" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" letter-spacing="2" fill="' + L.accent + '" opacity=".8">' + (p.movement === 'Quartz' ? 'SWISS QUARTZ' : 'AUTOMATIC') + '</text>';
     }
     /* hands */
@@ -317,13 +316,14 @@
     $('#viewingBtn').href = waLink(t('wa.viewing'));
     $('#conciergeBtn').href = waLink(t('wa.general'));
   }
+  var WA_ICO = '<svg class=\"wa-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45c6.56 0 11.9-5.34 11.9-11.89 0-3.18-1.24-6.17-3.48-8.42\"/></svg>';
   function waLink(msg) { return 'https://wa.me/' + CFG.whatsapp + '?text=' + encodeURIComponent(msg); }
 
   /* ------------------------------ hero ------------------------------ */
   function mountHero() {
     var flag = PRODUCTS.filter(function (p) { return p.flagship; })[0] || PRODUCTS[0];
     var host = $('#heroWatch'), old = $('svg', host); if (old) old.remove();
-    host.insertAdjacentHTML('afterbegin', watchSVG(flag, 'dial', { idp: 'hero', live: true }).replace('width="800" height="800"', 'role="img" aria-label="' + esc(flag.name) + '"'));
+    host.insertAdjacentHTML('afterbegin', watchSVG(flag, 'dial', { idp: 'hero', live: true, dialText: CFG.dialText }).replace('width="800" height="800"', 'role="img" aria-label="' + esc(flag.name) + '"'));
     tick();
   }
   function tick() {
@@ -337,7 +337,7 @@
 
   /* ---------------------------- filters + grid ---------------------- */
   function buildFilters() {
-    var cats = ['all', 'classic', 'dive', 'chrono', 'women', 'smart'];
+    var cats = ['all', 'women', 'yachtmaster', 'patek', 'omega', 'breitling', 'ap', 'cartier', 'datejust', 'oysterperp', 'daytona', 'daydate', 'submariner', 'skydweller', 'gmt'];
     $('#catTabs').innerHTML = cats.map(function (c) {
       return '<button class="cat-tab' + (F.cat === c ? ' active' : '') + '" role="tab" aria-selected="' + (F.cat === c) + '" data-cat="' + c + '">' + t('cat.' + c) + '</button>';
     }).join('');
@@ -345,9 +345,7 @@
       $(sel).innerHTML = '<option value="all">' + t('f.all') + '</option>' + vals.map(function (v) { return '<option value="' + esc(v) + '">' + t(prefix + '.' + v) + '</option>'; }).join('');
       $(sel).value = cur;
     }
-    fill('#fMov', 'mov', ['Automatic', 'Quartz', 'Manual Wind', 'Hybrid'], F.mov);
-    fill('#fMat', 'mat', ['904L Steel', '18k Yellow Gold', 'Rose Gold', 'Titanium', 'Ceramic'], F.mat);
-    fill('#fCond', 'cond', ['new', 'preowned'], F.cond);
+    fill('#fMov', 'mov', ['Automatic', 'Quartz'], F.mov);
     $('#fSort').innerHTML = ['featured', 'low', 'high'].map(function (v) { return '<option value="' + v + '">' + t('sort.' + v) + '</option>'; }).join('');
     $('#fSort').value = F.sort;
     var pr = $('#fPrice'); pr.min = 0; pr.max = MAXP; pr.step = 1000; pr.value = F.max;
@@ -360,10 +358,8 @@
     var list = PRODUCTS.filter(function (p) {
       if (F.cat !== 'all' && p.category !== F.cat) return false;
       if (F.mov !== 'all' && p.movement !== F.mov) return false;
-      if (F.mat !== 'all' && p.material !== F.mat) return false;
-      if (F.cond !== 'all' && p.condition !== F.cond) return false;
       if (p.price > F.max) return false;
-      if (q && (p.name + ' ' + p.ref + ' ' + p.collection + ' ' + p.material + ' ' + p.movement).toLowerCase().indexOf(q) < 0) return false;
+      if (q && (p.name + ' ' + p.brand + ' ' + p.ref + ' ' + p.collection + ' ' + p.material + ' ' + p.movement).toLowerCase().indexOf(q) < 0) return false;
       return true;
     });
     if (F.sort === 'low') list.sort(function (a, b) { return a.price - b.price; });
@@ -383,7 +379,7 @@
         '<button class="wish-btn' + (on ? ' on' : '') + '" data-act="wish" aria-label="' + t('btn.wish') + '" aria-pressed="' + on + '"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.2-9.3C1.7 8 3.4 5 6.6 5c2 0 3.500 1.200 5.400 3.200C13.900 6.200 15.400 5 17.400 5c3.200 0 4.900 3 3.800 6.200-1.700 4.700-9.200 9.300-9.200 9.300z"/></svg></button>' +
         '<div class="card-img" data-act="open" data-quick="' + esc(t('btn.quick')) + '" tabindex="0" role="button" aria-label="' + esc(p.name) + '">' + imgTag(p, p.images[0], p.name) + '</div>' +
         '<div class="card-body"><span class="coll">' + esc(p.collection) + '</span><h3>' + esc(p.name) + '</h3>' +
-        '<span class="mini">' + p.diameter + ' mm · ' + esc(tr('mov', p.movement)) + ' · ' + esc(tr('mat', p.material)) + '</span>' +
+        '<span class="mini">' + p.diameter + ' mm · ' + esc(tr('mov', p.movement)) + ' · ' + esc(p.material) + '</span>' +
         '<div class="card-foot"><span class="price">' + money(p.price) + '</span><button class="btn-sm" data-act="add">' + t('btn.add') + '</button></div></div></article>';
     }).join('');
   }
@@ -419,7 +415,7 @@
     body.innerHTML = state.cart.map(function (c) {
       var p = byId(c.id);
       return '<div class="line-item" data-id="' + p.id + '"><div class="th">' + imgTag(p, p.images[0], p.name) + '</div><div>' +
-        '<h4>' + esc(p.name) + '</h4><div class="mini">' + esc(p.ref) + ' · ' + esc(tr('cond', p.condition)) + '</div>' +
+        '<h4>' + esc(p.name) + '</h4><div class="mini">' + esc(p.ref) + '</div>' +
         '<div class="li-row"><div class="qty"><button data-act="dec" aria-label="−">−</button><span>' + c.qty + '</span><button data-act="inc" aria-label="+">+</button></div>' +
         '<b class="price" style="font-size:18px">' + money(p.price * c.qty) + '</b></div>' +
         '<div class="li-row"><button class="rm" data-act="rm">' + t('bag.remove') + '</button></div></div></div>';
@@ -464,9 +460,9 @@
     var p = byId(id); if (!p) return; currentProduct = p;
     var g = gallery(p), on = state.wish.indexOf(id) > -1;
     var specs = [
-      ['spec.ref', p.ref], ['spec.caliber', p.caliber], ['spec.mov', tr('mov', p.movement)], ['spec.mat', tr('mat', p.material)],
+      ['spec.ref', p.ref], ['spec.caliber', p.caliber], ['spec.mov', tr('mov', p.movement)], ['spec.mat', p.material],
       ['spec.diameter', p.diameter + ' mm'], ['spec.water', p.waterRes], ['spec.reserve', p.reserve], ['spec.bracelet', p.bracelet],
-      ['spec.cond', tr('cond', p.condition)], ['spec.box', p.box]
+      ['spec.box', p.box]
     ].map(function (r) { return '<div><dt>' + t(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd></div>'; }).join('');
     $('#productBody').innerHTML =
       '<div class="pm"><div class="pm-gal"><div class="pm-main" id="pmMain">' + imgTag(p, g[0].src, p.name, g[0].view) + '</div>' +
@@ -476,7 +472,7 @@
       '<p class="desc">' + esc(p.description) + '</p><dl class="specs">' + specs + '</dl>' +
       '<div class="pm-actions"><button class="btn btn-gold" data-act="add">' + t('btn.add') + '</button>' +
       '<button class="btn btn-ghost" data-act="wish" aria-label="' + t('btn.wish') + '">' + (on ? t('btn.saved') : t('btn.wish')) + '</button></div>' +
-      '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(t('wa.inquire', { name: p.name, ref: p.ref })) + '">' + t('btn.inquire') + '</a>' +
+      '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(t('wa.inquire', { name: p.name, ref: p.ref })) + '">' + WA_ICO + '<span>' + t('btn.inquire') + '</span></a>' +
       '<div class="inst" style="text-align:start">' + t('inst', { a: '<b>' + money(p.price * 1.05 / 4, 1) + '</b>' }) + '</div></div></div>';
     var main = $('#pmMain');
     main.addEventListener('mousemove', function (e) {
@@ -486,14 +482,14 @@
   }
 
   /* ----------------------------- checkout --------------------------- */
-  var EMIRATE_KEYS = ['dubai', 'abudhabi', 'sharjah', 'ajman', 'rak', 'fujairah', 'uaq'];
-  var form = { name: '', mobile: '', emirate: '', area: '', building: '', pay: 'card' };
+  var EMIRATE_KEYS = COUNTRIES.map(function (c) { return c[0]; });
+  var form = { name: '', mobile: '', emirate: '', area: '', building: '', pay: 'cod' };
   function openCheckout() {
     if (!state.cart.length) return;
     closeAll(true); renderCheckout(); openPanel('#checkoutModal');
   }
   function renderCheckout() {
-    var T = totals(), cod = T.total <= CFG.codMaxAed;
+    var T = totals(), cod = !CFG.codMaxAed || T.total <= CFG.codMaxAed;
     if (!cod && form.pay === 'cod') form.pay = 'card';
     var items = state.cart.map(function (c) {
       var p = byId(c.id); return '<div class="mini-line"><span>' + esc(p.name) + ' × ' + c.qty + '</span><b>' + money(p.price * c.qty, 1) + '</b></div>';
@@ -512,8 +508,7 @@
       '<div class="field" data-f="building"><label for="cBld">' + t('co.building') + '</label><input id="cBld" type="text" autocomplete="address-line1" value="' + esc(form.building) + '"><div class="msg">' + t('err.building') + '</div></div>' +
       '<div class="deliv" id="deliv"><svg viewBox="0 0 24 24"><path d="M2 7h11v9H2zM13 10h5l3 3v3h-8z"/><circle cx="6.500" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg><span id="delivTxt"></span></div>' +
       '<div class="sub-h">' + t('co.payment') + '</div><div class="pays">' +
-      pay('card', t('pay.card'), t('pay.card.d')) + pay('apple', t('pay.apple'), t('pay.apple.d')) +
-      pay('cod', t('pay.cod'), cod ? t('pay.cod.d', { a: money(CFG.codMaxAed) }) : t('pay.cod.na', { a: money(CFG.codMaxAed) }), !cod) +
+      pay('cod', t('pay.cod'), cod ? t('pay.cod.d') : t('pay.cod.na', { a: money(CFG.codMaxAed) }), !cod) + pay('card', t('pay.card'), t('pay.card.d')) + pay('apple', t('pay.apple'), t('pay.apple.d')) +
       pay('tabby', t('pay.tabby'), t('pay.tabby.d', { a: money(T.total / 4, 1) })) + '</div>' +
       '<div class="card-fields' + (form.pay === 'card' ? ' on' : '') + '" id="cardFields"><div class="field" data-f="card"><label for="cNum">' + t('card.number') + '</label><input id="cNum" type="text" inputmode="numeric" dir="ltr" autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="23"></div>' +
       '<div class="f2"><div class="field" data-f="exp"><label for="cExp">' + t('card.exp') + '</label><input id="cExp" type="text" inputmode="numeric" dir="ltr" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5"></div>' +
@@ -530,9 +525,7 @@
   }
   function deliveryInfo(em) {
     if (!em) return '';
-    if (em === 'dubai') return t('deliv.dubai');
-    var d = new Date(); d.setDate(d.getDate() + 1);
-    return t('deliv.other', { d: d.toLocaleDateString(state.lang === 'ar' ? 'ar-AE' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long' }) });
+    return em === 'AE' ? t('deliv.dubai') : t('deliv.other');
   }
   function updateDelivery() {
     var em = ($('#cEm') || {}).value, box = $('#deliv'); if (!box) return;
@@ -540,10 +533,10 @@
   }
   function normMobile(v) {
     var d = v.replace(/[\s\-()]/g, '');
-    var m = /^(?:\+971|00971|971|0)?(5[024568]\d{7})$/.exec(d);
-    return m ? m[1] : null;
+    var m = /^(?:\+|00)(\d{7,15})$/.exec(d);
+    return m ? '+' + m[1] : null;
   }
-  function fmtMobile(n) { return '+971 ' + n.slice(0, 2) + ' ' + n.slice(2, 5) + ' ' + n.slice(5); }
+  function fmtMobile(n) { return n; }
   function luhn(n) { var s = 0, alt = false; for (var i = n.length - 1; i >= 0; i--) { var d = +n[i]; if (alt) { d *= 2; if (d > 9) d -= 9; } s += d; alt = !alt; } return s % 10 === 0; }
 
   function submitCheckout(e) {
@@ -574,7 +567,7 @@
       pay: form.pay, last4: last4, delivery: deliveryInfo(form.emirate)
     };
     state.cart = []; state.promo = ''; persist(); renderBadges(); renderCart();
-    form = { name: '', mobile: '', emirate: '', area: '', building: '', pay: 'card' };
+    form = { name: '', mobile: '', emirate: '', area: '', building: '', pay: 'cod' };
     showReceipt(order);
   }
   var lastOrder = null;
@@ -684,11 +677,11 @@
   $('#currencySel').addEventListener('change', function (e) { state.currency = e.target.value; persist(); updatePriceOut(); renderGrid(); renderCart(); renderWish(); if ($('#productModal.open') && currentProduct) openProduct(currentProduct.id); });
   $('#langBtn').addEventListener('click', function () { state.lang = state.lang === 'en' ? 'ar' : 'en'; persist(); closeAll(); renderAll(); });
   $('#themeBtn').addEventListener('click', function () { state.theme = state.theme === 'dark' ? 'light' : 'dark'; persist(); document.documentElement.setAttribute('data-theme', state.theme); });
-  ['fMov', 'fMat', 'fCond'].forEach(function (id) { $('#' + id).addEventListener('change', function (e) { F[{ fMov: 'mov', fMat: 'mat', fCond: 'cond' }[id]] = e.target.value; renderGrid(); }); });
+  $('#fMov').addEventListener('change', function (e) { F.mov = e.target.value; renderGrid(); });
   $('#fSort').addEventListener('change', function (e) { F.sort = e.target.value; renderGrid(); });
   $('#fPrice').addEventListener('input', function (e) { F.max = +e.target.value; updatePriceOut(); renderGrid(); });
   $('#fSearch').addEventListener('input', function (e) { F.q = e.target.value; renderGrid(); });
-  $('#resetBtn').addEventListener('click', function () { F = { cat: 'all', mov: 'all', mat: 'all', cond: 'all', max: MAXP, q: '', sort: 'featured' }; $('#fSearch').value = ''; buildFilters(); renderGrid(); });
+  $('#resetBtn').addEventListener('click', function () { F = { cat: 'all', mov: 'all', max: MAXP, q: '', sort: 'featured' }; $('#fSearch').value = ''; buildFilters(); renderGrid(); });
 
   window.addEventListener('scroll', function () { $('#header').classList.toggle('scrolled', window.scrollY > 30); }, { passive: true });
   if ('IntersectionObserver' in window) {

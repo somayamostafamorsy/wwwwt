@@ -75,18 +75,24 @@
         <p data-i18n="col.sub"></p>
       </div>
       <div class="cat-tabs" id="catTabs" role="tablist"></div>
-      <div class="filter-row">
-        <div class="field"><label for="fMov" data-i18n="f.movement"></label><select id="fMov"></select></div>
-        <div class="field"><span class="lbl" data-i18n="f.price"></span>
-          <div class="range-wrap"><input type="range" id="fPrice" aria-label="Maximum price"><output id="fPriceOut"></output></div></div>
+      <div class="shop" id="shop">
+        <div class="shop-main">
+          <div class="shop-bar">
+            <button class="btn-sm filter-toggle" id="filterToggle" aria-controls="filters" aria-expanded="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span id="filterToggleTxt"></span></button>
+            <span id="resCount"></span>
+          </div>
+          <div class="grid" id="grid"></div>
+        </div>
+        <aside class="filters" id="filters" aria-label="Filters">
+          <div class="filters-head"><h3 data-i18n="f.title"></h3><button class="icon-btn" id="filterClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+          <div class="field"><label for="fSearch" data-i18n="f.search"></label><input type="search" id="fSearch" data-i18n-ph="f.searchph" autocomplete="off"></div>
+          <div class="field"><label for="fSort" data-i18n="f.sort"></label><select id="fSort"></select></div>
+          <div class="field"><label for="fMov" data-i18n="f.movement"></label><select id="fMov"></select></div>
+          <div class="field"><span class="lbl" data-i18n="f.price"></span><div class="range-wrap"><input type="range" id="fPrice" aria-label="Maximum price"><output id="fPriceOut"></output></div></div>
+          <button class="link-btn" id="resetBtn" data-i18n="f.reset"></button>
+        </aside>
       </div>
-      <div class="filter-row2">
-        <div class="field"><label for="fSearch" data-i18n="f.search"></label><input type="search" id="fSearch" data-i18n-ph="f.searchph" autocomplete="off"></div>
-        <div class="field"><label for="fSort" data-i18n="f.sort"></label><select id="fSort"></select></div>
-        <button class="link-btn" id="resetBtn" data-i18n="f.reset"></button>
-      </div>
-      <div class="res-meta"><span id="resCount"></span></div>
-      <div class="grid" id="grid"></div>
+      <div class="f-scrim" id="fScrim"></div>
     </div>
   </section>
 

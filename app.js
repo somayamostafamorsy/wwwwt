@@ -26,7 +26,7 @@
       'col.eyebrow': 'The Collection', 'col.title': 'Timepieces of Distinction',
       'col.sub': "From iconic Rolex references to Patek Philippe, Audemars Piguet, Omega and more — refine by model, movement and price.",
       'f.movement': 'Movement', 'f.material': 'Case Material', 'f.condition': 'Condition', 'f.price': 'Max Price',
-      'f.search': 'Search', 'f.searchph': 'Name, reference or collection…', 'f.sort': 'Sort By', 'f.reset': 'Reset filters', 'f.all': 'All',
+      'f.title': 'Filters', 'f.model': 'Model', 'f.hide': 'Hide filters', 'f.show': 'Filters', 'f.search': 'Search', 'f.searchph': 'Name, reference or collection…', 'f.sort': 'Sort By', 'f.reset': 'Reset filters', 'f.all': 'All',
       'sort.featured': 'Featured', 'sort.low': 'Price: Low to High', 'sort.high': 'Price: High to Low',
       'res.count': '{n} timepieces', 'res.one': '1 timepiece', 'res.none': 'No timepieces match your selection. Try widening your filters.',
       'cat.all': "All", 'cat.women': "Rolex for Women", 'cat.yachtmaster': "Rolex Yacht-Master", 'cat.patek': "Patek Philippe", 'cat.omega': "Omega", 'cat.breitling': "Breitling", 'cat.ap': "Audemars Piguet", 'cat.cartier': "Cartier Watches", 'cat.datejust': "Rolex Datejust", 'cat.oysterperp': "Rolex Oyster Perpetual", 'cat.daytona': "Rolex Daytona", 'cat.daydate': "Rolex Day-Date", 'cat.submariner': "Rolex Submariner", 'cat.skydweller': "Rolex Sky-Dweller", 'cat.gmt': "Rolex GMT",
@@ -83,7 +83,7 @@
       'col.eyebrow': 'المجموعة', 'col.title': 'ساعات استثنائية',
       'col.sub': "من مراجع رولكس الشهيرة إلى باتيك فيليب وأوديمار بيغيه وأوميغا وغيرها — صفِّ حسب الموديل والحركة والسعر.",
       'f.movement': 'الحركة', 'f.material': 'معدن العلبة', 'f.condition': 'الحالة', 'f.price': 'أقصى سعر',
-      'f.search': 'بحث', 'f.searchph': 'الاسم أو المرجع أو المجموعة…', 'f.sort': 'ترتيب حسب', 'f.reset': 'إعادة ضبط الفلاتر', 'f.all': 'الكل',
+      'f.title': 'الفلاتر', 'f.model': 'الموديل', 'f.hide': 'إخفاء الفلاتر', 'f.show': 'الفلاتر', 'f.search': 'بحث', 'f.searchph': 'الاسم أو المرجع أو المجموعة…', 'f.sort': 'ترتيب حسب', 'f.reset': 'إعادة ضبط الفلاتر', 'f.all': 'الكل',
       'sort.featured': 'المميزة', 'sort.low': 'السعر: من الأقل إلى الأعلى', 'sort.high': 'السعر: من الأعلى إلى الأقل',
       'res.count': '{n} ساعة', 'res.one': 'ساعة واحدة', 'res.none': 'لا توجد ساعات مطابقة. جرّب توسيع الفلاتر.',
       'cat.all': "الكل", 'cat.women': "رولكس للسيدات", 'cat.yachtmaster': "Rolex Yacht-Master", 'cat.patek': "Patek Philippe", 'cat.omega': "Omega", 'cat.breitling': "Breitling", 'cat.ap': "Audemars Piguet", 'cat.cartier': "Cartier", 'cat.datejust': "Rolex Datejust", 'cat.oysterperp': "Rolex Oyster Perpetual", 'cat.daytona': "Rolex Daytona", 'cat.daydate': "Rolex Day-Date", 'cat.submariner': "Rolex Submariner", 'cat.skydweller': "Rolex Sky-Dweller", 'cat.gmt': "Rolex GMT",
@@ -285,6 +285,12 @@
     return s + '</svg>';
   }
   function svgURI(p, view) { return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(watchSVG(p, view, { idp: p.id + (view || 'd') })); }
+  function placeholderURI(p) {
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420"><rect width="400" height="420" fill="#16181d"/><rect x="14" y="14" width="372" height="392" fill="none" stroke="#c6a86b" stroke-opacity=".35"/>' +
+      '<text x="200" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="22" letter-spacing="5" fill="#c6a86b">' + esc(String(p.brand).toUpperCase()) + '</text>' +
+      '<text x="200" y="226" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#d8d4c8">' + esc(p.name.replace(p.brand, '').trim()) + '</text></svg>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
   function imgTag(p, src, alt, extra) {
     return '<img src="' + esc(src) + '" alt="' + esc(alt) + '" loading="lazy" decoding="async" data-pid="' + p.id + '" data-view="' + (extra || 'dial') + '">';
   }
@@ -293,13 +299,16 @@
     var el = e.target;
     if (el && el.tagName === 'IMG' && el.dataset && el.dataset.pid && !el.dataset.fb) {
       var p = byId(el.dataset.pid); if (!p) return;
-      el.dataset.fb = '1'; el.src = svgURI(p, el.dataset.view || 'dial');
+      var m = /^(\.\/images\/.+)\.(jpg|png|webp)$/i.exec(el.getAttribute('src') || '');
+      if (m) { var order = ['jpg', 'png', 'webp'], n = +(el.dataset.ext || 0) + 1; if (m[2].toLowerCase() !== order[n - 1 > 2 ? 2 : n - 1] && false) return; var next = order.filter(function (x) { return x !== m[2].toLowerCase(); })[n - 1]; if (next) { el.dataset.ext = n; el.src = m[1] + '.' + next; return; } }
+      el.dataset.fb = '1'; el.src = placeholderURI(p);
     }
   }, true);
 
   function gallery(p) {
-    return p.images.map(function (u) { return { src: u, view: 'dial', label: t('view.dial') }; })
-      .concat([{ src: svgURI(p, 'side'), view: 'side', label: t('view.side') }, { src: svgURI(p, 'back'), view: 'back', label: t('view.back') }]).slice(0, 5);
+    var labels = [t('view.dial'), t('view.side'), t('view.back')];
+    return p.images.map(function (u, i) { return { src: u, view: ['dial', 'side', 'back'][i % 3], label: labels[i % 3] + (i > 2 ? ' ' + (Math.floor(i / 3) + 1) : '') }; })
+      .slice(0, 6);
   }
 
   /* ----------------------------- i18n apply ------------------------- */
@@ -466,7 +475,7 @@
     ].map(function (r) { return '<div><dt>' + t(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd></div>'; }).join('');
     $('#productBody').innerHTML =
       '<div class="pm"><div class="pm-gal"><div class="pm-main" id="pmMain">' + imgTag(p, g[0].src, p.name, g[0].view) + '</div>' +
-      '<div class="thumbs">' + g.map(function (x, i) { return '<button class="' + (i ? '' : 'on') + '" data-i="' + i + '" aria-label="' + esc(x.label) + '">' + imgTag(p, x.src, x.label, x.view) + '</button>'; }).join('') + '</div></div>' +
+      (g.length < 2 ? '' : '<div class="thumbs">') + g.map(function (x, i) { return '<button class="' + (i ? '' : 'on') + '" data-i="' + i + '" aria-label="' + esc(x.label) + '">' + imgTag(p, x.src, x.label, x.view) + '</button>'; }).join('') + (g.length < 2 ? '' : '</div>') + '</div>' +
       '<div class="pm-info"><span class="eyebrow">' + esc(p.collection) + ' · ' + esc(t('tag.' + p.tag)) + '</span><h2>' + esc(p.name) + '</h2>' +
       '<div class="pm-price">' + money(p.price) + '<small>' + t('vat.note') + '</small></div>' +
       '<p class="desc">' + esc(p.description) + '</p><dl class="specs">' + specs + '</dl>' +
@@ -617,7 +626,7 @@
 
   /* --------------------------- global render ------------------------ */
   function renderAll() {
-    applyStatic(); mountHero(); buildFilters(); renderGrid(); renderCart(); renderWish(); renderBadges();
+    applyStatic(); $('#filterToggleTxt').textContent = t(mqM.matches || $('#shop').classList.contains('no-filters') ? 'f.show' : 'f.hide'); mountHero(); buildFilters(); renderGrid(); renderCart(); renderWish(); renderBadges();
   }
 
   /* ------------------------------ events ---------------------------- */
@@ -683,11 +692,24 @@
   $('#fSearch').addEventListener('input', function (e) { F.q = e.target.value; renderGrid(); });
   $('#resetBtn').addEventListener('click', function () { F = { cat: 'all', mov: 'all', max: MAXP, q: '', sort: 'featured' }; $('#fSearch').value = ''; buildFilters(); renderGrid(); });
 
+  var mqM = window.matchMedia('(max-width: 900px)');
+  function setFilters(open) {
+    var shop = $('#shop'), isM = mqM.matches;
+    if (isM) { $('#filters').classList.toggle('open', open); $('#fScrim').classList.toggle('on', open); document.body.classList.toggle('lock', open); }
+    else shop.classList.toggle('no-filters', !open);
+    $('#filterToggle').setAttribute('aria-expanded', open);
+    $('#filterToggleTxt').textContent = open && !isM ? t('f.hide') : t('f.show');
+  }
+  function filtersOpen() { return mqM.matches ? $('#filters').classList.contains('open') : !$('#shop').classList.contains('no-filters'); }
+  $('#filterToggle').addEventListener('click', function () { setFilters(!filtersOpen()); });
+  $('#filterClose').addEventListener('click', function () { setFilters(false); });
+  $('#fScrim').addEventListener('click', function () { setFilters(false); });
+  mqM.addEventListener && mqM.addEventListener('change', function () { $('#filters').classList.remove('open'); $('#fScrim').classList.remove('on'); document.body.classList.remove('lock'); setFilters(!mqM.matches); });
   window.addEventListener('scroll', function () { $('#header').classList.toggle('scrolled', window.scrollY > 30); }, { passive: true });
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }); }, { threshold: .12 });
     $$('.reveal').forEach(function (el) { io.observe(el); });
   } else { $$('.reveal').forEach(function (el) { el.classList.add('in'); }); }
 
-  renderAll();
+  renderAll(); setFilters(!mqM.matches);
 })();

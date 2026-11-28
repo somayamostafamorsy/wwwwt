@@ -343,4 +343,4 @@ html[dir="ltr"] .shop > * { direction: ltr; } html[dir="rtl"] .shop > * { direct
   .filters.open { transform: none; } .filters-head .icon-btn { display: inline-flex; }
 }
 
-#catTabs { margin-bottom: 34px; }
+#catTabs { margin-bottom: 0; }
